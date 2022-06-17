@@ -66,13 +66,6 @@ export default {
   },
   created() {
     this.fetchData();
-  },
-  computed:{
-    // testmsg: () => {
-    //   // common.apiRequest();
-    //   let resultmsg = apiRequest();
-    //   return resultmsg;
-    // }
   }
 }
 </script>

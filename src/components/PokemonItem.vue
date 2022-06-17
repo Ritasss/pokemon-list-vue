@@ -24,10 +24,8 @@ export default {
   },
   methods:{
     fetchItemData() {
-      // let resultmsg = await apiRequest();
       apiRequest(this.pokemonItem.url).then((res)=>{
         this.pokemonDetails = res;
-        // console.log("🚀 ~ file: pokemonPage.vue ~ line 47 ~ fetchData ~ resultmsg", res)
       });
     }
   },

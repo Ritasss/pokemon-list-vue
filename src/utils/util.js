@@ -59,8 +59,6 @@ export function apiRequest(url) {
         return new Promise((resolve,reject) => {
             callApi.get(url)
             .then((response) => {
-                // Here "response" is "undefined"
-                // console.log('apiRequest function: ',response)
                 resolve(response)
             })
             .catch((error) => {
@@ -68,10 +66,4 @@ export function apiRequest(url) {
                 reject(error);
             });
         });
-        // return 'apiRequest function';
-}
-
-export function apiRequesttest() {
-        console.log('apiRequesttest function');
-        return;
 }
